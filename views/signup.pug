@@ -1,0 +1,38 @@
+meta(charset="UTF-8")
+meta(http-equiv="X-UA-Compatible", content="IE=edge")
+meta(name="viewport", content="width=device-width,initial-scale=1")
+title signup
+.center
+  h1 signup form
+  form(name="entryForm", action="/signup", method="POST")
+    .txt-field
+      input(type="text", name="name")
+      span
+      label(for="username") Name
+    .txt-field
+      input(type="text", name="email")
+      span
+      label(for="username") Email
+    .txt-field
+      input(type="password", name="password")
+      span
+      label(for="password") Password
+    .txt-field
+      input(type="password", name="confirmpassword")
+      span
+      label(for="password") Confirm Password
+    .pass.
+      
+      Forgot Password?
+      
+    .submit
+      a(href="home.html")
+        input(type="submit", value="login")
+    .signup-link
+      | 
+Not registered? 
+      a(href="mgtEntry.html") Signup here
+script(src="indexValidate.js").
+  
+  
+//  just backend validation 

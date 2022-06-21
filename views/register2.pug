@@ -1,0 +1,27 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  link(rel='stylesheet' href='batteryHireEntrycss.css')
+  title Battery Hire
+.center
+  h1 Parkville Park
+  form(action='/register2' method='POST' )
+    .txt-field
+      input(type='text' name='bNumber')
+      span
+      label Battery Hire Number
+    .txt-field
+      input(type='text' name='bSize')
+      span
+      label Battery size
+    .txt-field
+      input(type='text' name='bPrice')
+      span
+      label Battery Price
+    .button
+      a(href='home.html')
+        input(type='button' value='back')
+      input(type='submit' value='submit')
+      input(type='button' value='print')
